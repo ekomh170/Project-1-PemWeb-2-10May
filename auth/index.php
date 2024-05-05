@@ -80,15 +80,15 @@ if (isset($_POST['submit'])) {
                 </div>
 
                 <form action="" method="post" class="login100-form validate-form">
-                    <div class="wrap-input100 validate-input m-b-26" data-validate="Email is required">
+                    <div class="wrap-input100 validate-input m-b-26" data-validate="Email Harus di Isi">
                         <span class="label-input100">Email</span>
-                        <input class="input100" type="email" name="email" id="email" placeholder="Enter email">
+                        <input class="input100" type="email" name="email" id="email" placeholder="Masukan email">
                         <span class="focus-input100"></span>
                     </div>
 
-                    <div class="wrap-input100 validate-input m-b-18" data-validate="Password is required">
+                    <div class="wrap-input100 validate-input m-b-18" data-validate="Password Harus di Isi">
                         <span class="label-input100">Password</span>
-                        <input class="input100" type="password" name="password" id="password" placeholder="Enter password">
+                        <input class="input100" type="password" name="password" id="password" placeholder="Masukan password">
                         <span class="focus-input100"></span>
                     </div>
 
@@ -134,7 +134,7 @@ if (isset($_POST['submit'])) {
     <script>
         function autoFill() {
             if (document.getElementById('ckb1').checked) {
-                document.getElementById('email').value = 'ekomh@puskesmas.co.id';
+                document.getElementById('email').value = 'admin@puskesmas.co.id';
                 document.getElementById('password').value = '123';
             } else {
                 document.getElementById('email').value = '';

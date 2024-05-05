@@ -1,7 +1,7 @@
 <?php
 
 require_once("../../config/validasi_login.php"); 
-validasi_login("../../auth/index.php");
+$user = validasi_login("../../auth/index.php");
 
 ?>
 

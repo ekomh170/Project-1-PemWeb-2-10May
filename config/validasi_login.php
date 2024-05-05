@@ -7,4 +7,10 @@ function validasi_login($redirect_url) {
         header("Location: " . $redirect_url);
         exit;
     }
+    
+    // Mengambil informasi user jika sudah login
+    $user = $_SESSION['user'];
+    
+    // Mengembalikan informasi user
+    return $user;
 }
