@@ -42,7 +42,7 @@ require_once 'sidebar.php';
                             <table class="table table-striped text-center">
                                 <thead>
                                     <tr>
-                                        <th>ID</th>
+                                        <th>No</th>
                                         <th>Nama Lengkap</th>
                                         <th>Nama Panggilan</th>
                                         <th>Email</th>
@@ -58,10 +58,11 @@ require_once 'sidebar.php';
                                     require '../../config/dbkoneksi.php';
                                     // Bikin Query SQL
                                     $query = $dbh->query("SELECT * FROM users");
+                                    $counter = 1;
                                     // Tampilkan data looping
                                     foreach ($query as $row) {
                                         echo "<tr>";
-                                        echo "<td>" . $row['user_id'] . "</td>";
+                                        echo "<td>" . $counter . "</td>";
                                         echo "<td>" . $row['fullname'] . "</td>";
                                         echo "<td>" . $row['username'] . "</td>";
                                         echo "<td>" . $row['email'] . "</td>";
@@ -74,6 +75,7 @@ require_once 'sidebar.php';
                                         echo "<a href='delete.php?id=" . $row['user_id'] . "' onclick='return confirm(\"Yakin Hapus Data?\")'><button class='btn btn-danger'>Delete</button></a>";
                                         echo "</td>";
                                         echo "</tr>";
+                                        $counter++;
                                     }
                                     ?>
                                 </tbody>

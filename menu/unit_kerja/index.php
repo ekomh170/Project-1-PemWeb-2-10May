@@ -42,7 +42,7 @@ require_once 'sidebar.php';
                             <table class="table table-striped text-center">
                                 <thead>
                                     <tr>
-                                        <th>ID</th>
+                                        <th>No</th>
                                         <th>Nama</th>
                                         <th>Aksi</th>
                                     </tr>
@@ -53,15 +53,17 @@ require_once 'sidebar.php';
                                     require '../../config/dbkoneksi.php';
                                     // Bikin Query SQL
                                     $query = $dbh->query("SELECT * FROM unit_kerja");
+                                    $counter = 1;
                                     // Tampilkan data looping
                                     foreach ($query as $row) {
                                         echo "<tr>";
-                                        echo "<td>" . $row['id'] . "</td>";
+                                        echo "<td>" . $counter . "</td>";
                                         echo "<td>" . $row['nama'] . "</td>";
                                         echo "<td>";
                                         echo "<a href='edit.php?id=" . $row['id'] . "'><button class='btn btn-warning'>Edit</button></a>";
                                         echo "</td>";
                                         echo "</tr>";
+                                        $counter++;
                                     }
                                     ?>
                                 </tbody>

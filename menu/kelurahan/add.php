@@ -52,12 +52,12 @@ if (isset($_POST["submit"])) {
                             </div>
                         </div>
                         <div class="card-body">
-                            <h2 class="text-center">Form Kelurahan</h2>
+                            <h2 class="text-center mb-5">Form Kelurahan</h2>
                             <form action="add.php" method="POST">
                                 <div class="form-group row">
-                                    <label for="nama" class="col-4 col-form-label">Nama</label>
+                                    <label for="nama" class="col-4 col-form-label">Nama Kelurahan</label>
                                     <div class="col-8">
-                                        <input id="nama" name="nama" type="text" class="form-control">
+                                        <input id="nama" name="nama" type="text" class="form-control" required>
                                     </div>
                                 </div>
                                 <div class="form-group row">

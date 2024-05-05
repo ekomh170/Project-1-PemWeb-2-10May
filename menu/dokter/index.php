@@ -60,10 +60,11 @@ require_once 'sidebar.php';
                                     require '../../config/dbkoneksi.php';
                                     // Bikin Query SQL
                                     $query = $dbh->query("SELECT * FROM dokter");
+                                    $counter = 1;
                                     // Tampilkan data looping
                                     foreach ($query as $row) {
                                         echo "<tr>";
-                                        echo "<td>" . $row['id'] . "</td>";
+                                        echo "<td>" . $counter . "</td>";
                                         echo "<td>" . $row['nama'] . "</td>";
                                         echo "<td>" . $row['gender'] . "</td>";
                                         echo "<td>" . $row['tmp_lahir'] . "</td>";
@@ -78,6 +79,7 @@ require_once 'sidebar.php';
                                         echo "<a href='delete.php?id=" . $row['id'] . "' onclick='return confirm(\"Yakin Hapus Data?\")'><button class='btn btn-danger'>Delete</button></a>";
                                         echo "</td>";
                                         echo "</tr>";
+                                        $counter++;
                                     }
                                     ?>
                                 </tbody>

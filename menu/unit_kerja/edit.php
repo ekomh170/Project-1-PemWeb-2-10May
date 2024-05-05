@@ -63,12 +63,12 @@ if (isset($_POST['submit'])) {
                             </div>
                         </div>
                         <div class="card-body">
-                            <h2 class="text-center">Form Unit Kerja</h2>
+                            <h2 class="text-center mb-5">Form Unit Kerja</h2>
                             <form action="edit.php?id=<?= $row['id'] ?>" method="POST">
                                 <div class="form-group row">
-                                    <label for="nama" class="col-4 col-form-label">Nama</label>
+                                    <label for="nama" class="col-4 col-form-label">Nama Unit Kerja</label>
                                     <div class="col-8">
-                                        <input id="nama" name="nama" type="text" class="form-control" value="<?= $row['nama'] ?>">
+                                        <input id="nama" name="nama" type="text" class="form-control" value="<?= $row['nama'] ?>" required>
                                     </div>
                                 </div>
                                 <div class="form-group row">

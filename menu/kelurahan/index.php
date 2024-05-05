@@ -51,15 +51,17 @@ require_once 'sidebar.php';
                                     require '../../config/dbkoneksi.php';
                                     // Bikin Query SQL
                                     $query = $dbh->query("SELECT * FROM kelurahan");
+                                    $counter = 1;
                                     // Tampilkan data looping
                                     foreach ($query as $row) {
                                         echo "<tr>";
-                                        echo "<td>" . $row['id'] . "</td>";
+                                        echo "<td>" . $counter . "</td>";
                                         echo "<td>" . $row['nama'] . "</td>";
                                         echo "<td>";
                                         echo "<a href='edit.php?id=" . $row['id'] . "'><button class='btn btn-warning'>Edit</button></a>";
                                         echo "</td>";
                                         echo "</tr>";
+                                        $counter++;
                                     }
                                     ?>
                                 </tbody>
