@@ -21,9 +21,9 @@
 
 ## Deskripsi
 
-Projek ini bertujuan untuk membuat aplikasi CRUD sederhana. Aplikasi ini menggunakan teknologi PHP, MySQL, dan AdminLTE. Terdapat lima tabel yang akan diolah, yaitu pasien, periksa, dokter, unit kerja & kelurahan.
+Projek ini bertujuan untuk membuat aplikasi CRUD sederhana. Aplikasi ini menggunakan teknologi PHP, MySQL, dan AdminLTE. Terdapat lima tabel yang akan diolah, yaitu users, pasien, periksa, dokter, unit kerja & kelurahan.
 
-### Link Project 01
+### Link Project 01 -> 10 Mei
 
 1. [Project 01 - 10 Mei - Aplikasi CRUD Sederhana Puskesmas
    ](https://github.com/ekomh170/Project-1-PemWeb-2-10May.git)
