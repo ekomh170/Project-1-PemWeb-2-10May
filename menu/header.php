@@ -1,3 +1,10 @@
+<?php
+
+require_once("../config/validasi_login.php"); 
+validasi_login("../auth/index.php");
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
