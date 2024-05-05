@@ -14,7 +14,7 @@
                 <img src="../../dist/img/profile/profile.png" class="img-circle elevation-2" alt="User Image">
             </div>
             <div class="info">
-                <a href="../profile.php" class="d-block">Eko Muchamad Haryono</a>
+                <a href="profile.php" class="d-block">Eko Muchamad Haryono</a>
             </div>
         </div>
 
@@ -35,16 +35,15 @@
             <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
 
                 <li class="nav-item">
-                    <a href="../../index.php" class="nav-link">
+                    <a href="../index.php" class="nav-link">
                         <i class="nav-icon fas fa-home"></i>
                         <p>
                             Halaman Utama
                         </p>
                     </a>
                 </li>
-
                 <li class="nav-item">
-                    <a href="../../profile.php" class="nav-link">
+                    <a href="../profile.php" class="nav-link">
                         <i class="nav-icon fas fa-user-alt"></i>
                         <p>
                             Profile Kreator
@@ -52,53 +51,43 @@
                     </a>
                 </li>
 
+                <li class="nav-header">Menu Utama</li>
+
                 <li class="nav-item">
                     <a href="#" class="nav-link active">
-                        <i class="nav-icon fas fa-tachometer-alt"></i>
+                        <i class="nav-icon fas fa-table"></i>
                         <p>
-                            Table Data
+                            Master Data Medis
                             <i class="right fas fa-angle-left"></i>
                         </p>
                     </a>
                     <ul class="nav nav-treeview">
                         <li class="nav-item">
-                            <a href="index.php" class="nav-link active">
+                            <a href="../pasien/index.php" class="nav-link active">
                                 <i class="far fa-circle nav-icon"></i>
                                 <p>Table Pasien</p>
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a href="../dokter" class="nav-link">
+                            <a href="../dokter/index.php" class="nav-link">
                                 <i class="far fa-circle nav-icon"></i>
                                 <p>Table Dokter</p>
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a href="../periksa" class="nav-link">
+                            <a href="../periksa/index.php" class="nav-link">
                                 <i class="far fa-circle nav-icon"></i>
                                 <p>Table Periksa</p>
                             </a>
                         </li>
-                    </ul>
-                </li>
-
-                <li class="nav-item">
-                    <a href="#" class="nav-link">
-                        <i class="nav-icon fas fa-tachometer-alt"></i>
-                        <p>
-                            Table Data Tambahan
-                            <i class="right fas fa-angle-left"></i>
-                        </p>
-                    </a>
-                    <ul class="nav nav-treeview">
                         <li class="nav-item">
-                            <a href="../kelurahan" class="nav-link">
+                            <a href="../kelurahan/index.php" class="nav-link">
                                 <i class="far fa-circle nav-icon"></i>
                                 <p>Table Kelurahan</p>
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a href="../unit_kerja" class="nav-link">
+                            <a href="../unit_kerja/index.php" class="nav-link">
                                 <i class="far fa-circle nav-icon"></i>
                                 <p>Table Unit Kerja</p>
                             </a>
@@ -107,8 +96,26 @@
                 </li>
 
                 <li class="nav-item">
+                    <a href="#" class="nav-link">
+                        <i class="nav-icon fas fa-table"></i>
+                        <p>
+                            Data Pengguna
+                            <i class="right fas fa-angle-left"></i>
+                        </p>
+                    </a>
+                    <ul class="nav nav-treeview">
+                        <li class="nav-item">
+                            <a href="../users/index.php" class="nav-link">
+                                <i class="far fa-circle nav-icon"></i>
+                                <p>Table Users</p>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="nav-header">Menu Tambahan</li>
+                <li class="nav-item">
                     <a href="https://www.linkedin.com/in/eko-haryono-290/" class="nav-link" target="_blank">
-                        <i class="nav-icon fas fa-user-alt"></i>
+                        <i class="nav-icon fab fa-linkedin"></i>
                         <p>
                             Profile Linkedin
                         </p>
@@ -117,9 +124,20 @@
 
                 <li class="nav-item">
                     <a href="https://github.com/ekomh170" class="nav-link" target="_blank">
-                        <i class="nav-icon fa fa-user-alt"></i>
+                        <i class="nav-icon fab fa-github"></i>
                         <p>
                             Profile Github
+                        </p>
+                    </a>
+                </li>
+
+                <li class="nav-header">Keluar Dari Akses Administrator</li>
+
+                <li class="nav-item">
+                    <a href="../../config/logout.php" class="nav-link" target="_blank">
+                        <i class="nav-icon fas  fa-sign-out-alt"></i>
+                        <p>
+                            Log-Out 
                         </p>
                     </a>
                 </li>

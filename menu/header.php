@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Project 01 - Eko Muchamad Haryono</title>
+    <title>Halaman Utama - Eko Muchamad Haryono - Project 01</title>
 
     <!-- Favicon, Apple Touch Icon, Android Chrome 192 & 512, Favicon 16 & 32, Site.Web Manifest  -->
     <link rel="icon" href="../dist/img/favicon/favicon.ico" type="image/x-icon" />
@@ -48,10 +48,10 @@
                     <a href="periksa" class="nav-link">Periksa</a>
                 </li>
                 <li class="nav-item d-none d-sm-inline-block">
-                    <a href="periksa" class="nav-link">Kelurahan</a>
+                    <a href="kelurahan" class="nav-link">Kelurahan</a>
                 </li>
                 <li class="nav-item d-none d-sm-inline-block">
-                    <a href="periksa" class="nav-link">Unit Kerja</a>
+                    <a href="unit_kerja" class="nav-link">Unit Kerja</a>
                 </li>
             </ul>
 

@@ -4,32 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Halaman Data Dokter - Eko Muchamad Haryono</title>
-
-    <?php
-
-    if (isset($_POST['submit'])) {
-        require_once 'dbkoneksi.php';
-
-        $user = $dbh->prepare("SELECT * FROM user WHERE username = ? AND password = ?");
-        $user->execute([
-            $_POST['username'], $_POST['password']
-        ]);
-
-        $count = $user->rowCount();
-        // Untuk Memastikan Apakah User Tersedia Atau Tidak
-
-        if ($count > 0) {
-            session_start();
-            $_SESSION['user'] = $user->fetch();
-
-            header("Location: index.php");
-        } else { // Jika Data Login
-            header("Location: login.php");
-        }
-    }
-
-    ?>
+    <title>Halaman Data Dokter - Eko Muchamad Haryono - Project 01</title>
 
     <!-- Favicon, Apple Touch Icon, Android Chrome 192 & 512, Favicon 16 & 32, Site.Web Manifest  -->
     <link rel="icon" href="../../dist/img/favicon/favicon.ico" type="image/x-icon" />
@@ -61,16 +36,22 @@
                     <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
                 </li>
                 <li class="nav-item d-none d-sm-inline-block">
-                    <a href="../../index.php" class="nav-link">Home</a>
+                    <a href="../index.php" class="nav-link">Halaman Utama</a>
                 </li>
                 <li class="nav-item d-none d-sm-inline-block">
-                    <a href="../../pasien" class="nav-link">Pasien</a>
+                    <a href="../pasien/index.php" class="nav-link">Pasien</a>
                 </li>
                 <li class="nav-item d-none d-sm-inline-block">
-                    <a href="index.php" class="nav-link">Dokter</a>
+                    <a href="../dokter/index.php" class="nav-link">Dokter</a>
                 </li>
                 <li class="nav-item d-none d-sm-inline-block">
-                    <a href="../../periksa" class="nav-link">Periksa</a>
+                    <a href="../periksa/index.php" class="nav-link">Periksa</a>
+                </li>
+                <li class="nav-item d-none d-sm-inline-block">
+                    <a href="../kelurahan/index.php" class="nav-link">Kelurahan</a>
+                </li>
+                <li class="nav-item d-none d-sm-inline-block">
+                    <a href="../unit_kerja/index.php" class="nav-link">Unit</a>
                 </li>
             </ul>
 
