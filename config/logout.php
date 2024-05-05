@@ -8,7 +8,10 @@ session_unset();
 // Hancurkan sesi
 session_destroy();
 
-// Redirect kembali ke halaman login atau halaman lain yang diinginkan
-header("Location: ../index.php");
+// Pesan untuk alert
+$message = "Anda telah berhasil logout.";
+
+// Menggunakan JavaScript untuk menampilkan alert
+echo "<script>alert('$message'); window.location.href='../index.php';</script>";
 exit;
 ?>

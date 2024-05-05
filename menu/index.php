@@ -3,6 +3,13 @@ require_once 'header.php';
 require_once 'sidebar.php';
 ?>
 
+<script>
+    <?php if(isset($_GET['login']) && $_GET['login'] == 'success') { ?>
+        alert("Petugas Berhasil Login berhasil Ke Halaman Administrator Selamat!!");
+    <?php } ?>
+</script>
+
+
 <div class="content-wrapper">
     <section class="content-header">
         <div class="container-fluid">

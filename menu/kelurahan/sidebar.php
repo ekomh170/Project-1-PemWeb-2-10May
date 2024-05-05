@@ -134,7 +134,7 @@
                 <li class="nav-header">Keluar Dari Akses Administrator</li>
 
                 <li class="nav-item">
-                    <a href="../../config/logout.php" class="nav-link" target="_blank">
+                    <a href="../../config/logout.php" class="nav-link">
                         <i class="nav-icon fas  fa-sign-out-alt"></i>
                         <p>
                             Log-Out 
