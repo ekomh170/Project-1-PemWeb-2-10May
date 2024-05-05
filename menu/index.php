@@ -40,6 +40,9 @@ require_once 'sidebar.php';
                                     $dokter = $dbh->query("SELECT COUNT(*) AS total FROM dokter")->fetchColumn();
                                     $pasien = $dbh->query("SELECT COUNT(*) AS total FROM pasien")->fetchColumn();
                                     $periksa = $dbh->query("SELECT COUNT(*) AS total FROM periksa")->fetchColumn();
+                                    $users = $dbh->query("SELECT COUNT(*) AS total FROM users")->fetchColumn();
+                                    // $kelurahan = $dbh->query("SELECT COUNT(*) AS total FROM kelurahan")->fetchColumn();
+                                    // $unit_kerja = $dbh->query("SELECT COUNT(*) AS total FROM unit_kerja")->fetchColumn();
                                     ?>
                                     <div class="row justify-content-center">
                                         <div class="col-lg-3 col-6">
@@ -80,10 +83,23 @@ require_once 'sidebar.php';
                                                 <a href="periksa/index.php" class="small-box-footer">Menu Periksa <i class="fas fa-arrow-circle-right"></i></a>
                                             </div>
                                         </div>
+
+                                        <div class="col-lg-3 col-6">
+                                            <div class="small-box bg-danger">
+                                                <div class="inner">
+                                                    <h3><?= $users ?></h3>
+                                                    <p>Total Akun Aplikasi Puskesmas</p>
+                                                </div>
+                                                <div class="icon">
+                                                    <i class="fa fa-users"></i>
+                                                </div>
+                                                <a href="users/index.php" class="small-box-footer">Menu Users <i class="fas fa-arrow-circle-right"></i></a>
+                                            </div>
+                                        </div>
                                     </div>
                                     <!-- Jumlah Data Per Menu -->
 
-                                    <div class="row">
+                                    <div class="row mt-3">
                                         <div class="col-12">
                                             <div class="card bg-dark text-white">
                                                 <div class="card-header">

@@ -1,6 +1,6 @@
 <?php
 // Memanggil file koneksi database
-require '../dbkoneksi.php';
+require '../../config/dbkoneksi.php';
 
 // Memeriksa apakah parameter id telah diterima dari URL
 if (isset($_GET['id'])) {

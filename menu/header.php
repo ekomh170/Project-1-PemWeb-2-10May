@@ -51,7 +51,7 @@
                     <a href="kelurahan" class="nav-link">Kelurahan</a>
                 </li>
                 <li class="nav-item d-none d-sm-inline-block">
-                    <a href="unit_kerja" class="nav-link">Unit Kerja</a>
+                    <a href="unit_kerja" class="nav-link">Unit</a>
                 </li>
             </ul>
 
