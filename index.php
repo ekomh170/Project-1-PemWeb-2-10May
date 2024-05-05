@@ -30,6 +30,18 @@
 
 </head>
 
+<?php
+
+require 'config/dbkoneksi.php';
+$dokter = $dbh->query("SELECT COUNT(*) AS total FROM dokter")->fetchColumn();
+$pasien = $dbh->query("SELECT COUNT(*) AS total FROM pasien")->fetchColumn();
+$periksa = $dbh->query("SELECT COUNT(*) AS total FROM periksa")->fetchColumn();
+$unit_kerja = $dbh->query("SELECT COUNT(*) AS total FROM unit_kerja")->fetchColumn();
+
+
+
+?>
+
 <body>
 
   <!-- ***** Preloader Start ***** -->
@@ -147,7 +159,7 @@
             </div>
             <div class="main-content">
               <h4>Pelayanan Kesehatan Ibu dan Anak (KIA)</h4>
-              <p>Memberikan pemeriksaan gigi, perawatan gigi dasar, dan penyuluhan tentang pentingnya menjaga kesehatan gigi dan mulut kepada masyarakat.</p>
+              <p>Pelayanan Kesehatan Ibu dan Anak (KIA) adalah pendekatan terintegrasi dalam sistem kesehatan yang dirancang khusus untuk memberikan perawatan yang holistik kepada ibu hamil, ibu menyusui, bayi, dan anak-anak.</p>
 
             </div>
           </div>
@@ -159,7 +171,7 @@
             </div>
             <div class="main-content">
               <h4>Pelayanan Kesehatan Gigi dan Mulut</h4>
-              <p>You can start learning HTML CSS by modifying free templates from our website too.</p>
+              <p>Memberikan pemeriksaan gigi, perawatan gigi dasar, dan penyuluhan tentang pentingnya menjaga kesehatan gigi dan mulut.</p>
 
             </div>
           </div>
@@ -247,16 +259,16 @@
       </div>
       <ul class="event_filter">
         <li>
-          <a class="is_active" href="#!" data-filter="*">Show All</a>
+          <a class="is_active" href="#!" data-filter="*">Semua Kegiatan</a>
         </li>
         <li>
-          <a href="#!" data-filter=".design">Webdesign</a>
+          <a href="#!" data-filter=".design">Pelayanan Kesehatan Utama</a>
         </li>
         <li>
-          <a href="#!" data-filter=".development">Development</a>
+          <a href="#!" data-filter=".development">Pelayanan Kesehatan Ibu dan Anak (KIA)</a>
         </li>
         <li>
-          <a href="#!" data-filter=".wordpress">Wordpress</a>
+          <a href="#!" data-filter=".wordpress">Pelayanan Kesehatan Gigi dan Mulut</a>
         </li>
       </ul>
       <div class="row event_box">
@@ -264,10 +276,6 @@
           <div class="events_item">
             <div class="thumb">
               <a href="#"><img src="assets/landing/images/course-01.jpg" alt=""></a>
-              <span class="category">Webdesign</span>
-              <span class="price">
-                <h6><em>$</em>160</h6>
-              </span>
             </div>
             <div class="down-content">
               <span class="author">Stella Blair</span>
@@ -279,10 +287,6 @@
           <div class="events_item">
             <div class="thumb">
               <a href="#"><img src="assets/landing/images/course-02.jpg" alt=""></a>
-              <span class="category">Development</span>
-              <span class="price">
-                <h6><em>$</em>340</h6>
-              </span>
             </div>
             <div class="down-content">
               <span class="author">Cindy Walker</span>
@@ -294,10 +298,6 @@
           <div class="events_item">
             <div class="thumb">
               <a href="#"><img src="assets/landing/images/course-03.jpg" alt=""></a>
-              <span class="category">Wordpress</span>
-              <span class="price">
-                <h6><em>$</em>640</h6>
-              </span>
             </div>
             <div class="down-content">
               <span class="author">David Hutson</span>
@@ -309,10 +309,6 @@
           <div class="events_item">
             <div class="thumb">
               <a href="#"><img src="assets/landing/images/course-04.jpg" alt=""></a>
-              <span class="category">Development</span>
-              <span class="price">
-                <h6><em>$</em>450</h6>
-              </span>
             </div>
             <div class="down-content">
               <span class="author">Stella Blair</span>
@@ -324,10 +320,6 @@
           <div class="events_item">
             <div class="thumb">
               <a href="#"><img src="assets/landing/images/course-05.jpg" alt=""></a>
-              <span class="category">Wordpress</span>
-              <span class="price">
-                <h6><em>$</em>320</h6>
-              </span>
             </div>
             <div class="down-content">
               <span class="author">Sophia Rose</span>
@@ -339,10 +331,6 @@
           <div class="events_item">
             <div class="thumb">
               <a href="#"><img src="assets/landing/images/course-06.jpg" alt=""></a>
-              <span class="category">Webdesign</span>
-              <span class="price">
-                <h6><em>$</em>240</h6>
-              </span>
             </div>
             <div class="down-content">
               <span class="author">David Hutson</span>
@@ -362,25 +350,25 @@
             <div class="row">
               <div class="col-lg-3 col-md-6">
                 <div class="counter">
-                  <h2 class="timer count-title count-number" data-to="150" data-speed="1000"></h2>
+                  <h2 class="timer count-title count-number" data-to="<?= $dokter ?>" data-speed="1000"></h2>
                   <p class="count-text ">Jumlah Dokter</p>
                 </div>
               </div>
               <div class="col-lg-3 col-md-6">
                 <div class="counter">
-                  <h2 class="timer count-title count-number" data-to="804" data-speed="1000"></h2>
+                  <h2 class="timer count-title count-number" data-to="<?= $periksa ?>" data-speed="1000"></h2>
                   <p class="count-text ">Pasien Telah Diperiksa</p>
                 </div>
               </div>
               <div class="col-lg-3 col-md-6">
                 <div class="counter">
-                  <h2 class="timer count-title count-number" data-to="50" data-speed="1000"></h2>
+                  <h2 class="timer count-title count-number" data-to="<?= $unit_kerja ?>" data-speed="1000"></h2>
                   <p class="count-text ">Unit Kerja</p>
                 </div>
               </div>
               <div class="col-lg-3 col-md-6">
                 <div class="counter end">
-                  <h2 class="timer count-title count-number" data-to="15" data-speed="1000"></h2>
+                  <h2 class="timer count-title count-number" data-to="<?= $pasien ?>" data-speed="1000"></h2>
                   <p class="count-text ">Jumlah Pasien</p>
                 </div>
               </div>
@@ -394,62 +382,22 @@
   <div class="team section" id="team">
     <div class="container">
       <div class="row">
-        <div class="col-lg-3 col-md-6">
-          <div class="team-member">
-            <div class="main-content">
-              <img src="assets/landing/images/member-01.jpg" alt="">
-              <span class="category">UX Teacher</span>
-              <h4>Sophia Rose</h4>
-              <ul class="social-icons">
-                <li><a href="#"><i class="fab fa-facebook"></i></a></li>
-                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
-              </ul>
+        <?php
+        $query = $dbh->query("SELECT nama, kategori FROM dokter LIMIT 4");
+        foreach ($query as $row) {
+        ?>
+
+          <div class="col-lg-3 col-md-6">
+            <div class="team-member">
+              <div class="main-content">
+                <img src="assets/landing/images/dokter_ico.jpg" alt="">
+                <span class="category"><?= $row['kategori'] ?></span>
+                <h4><?= $row['nama'] ?></h4>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="col-lg-3 col-md-6">
-          <div class="team-member">
-            <div class="main-content">
-              <img src="assets/landing/images/member-02.jpg" alt="">
-              <span class="category">Graphic Teacher</span>
-              <h4>Cindy Walker</h4>
-              <ul class="social-icons">
-                <li><a href="#"><i class="fab fa-facebook"></i></a></li>
-                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-6">
-          <div class="team-member">
-            <div class="main-content">
-              <img src="assets/landing/images/member-03.jpg" alt="">
-              <span class="category">Full Stack Master</span>
-              <h4>David Hutson</h4>
-              <ul class="social-icons">
-                <li><a href="#"><i class="fab fa-facebook"></i></a></li>
-                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-6">
-          <div class="team-member">
-            <div class="main-content">
-              <img src="assets/landing/images/member-04.jpg" alt="">
-              <span class="category">Digital Animator</span>
-              <h4>Stella Blair</h4>
-              <ul class="social-icons">
-                <li><a href="#"><i class="fab fa-facebook"></i></a></li>
-                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
-              </ul>
-            </div>
-          </div>
-        </div>
+        <?php } ?>
+
       </div>
     </div>
   </div>
@@ -477,7 +425,7 @@
             <div class="row">
               <div class="col-lg-3">
                 <div class="image">
-                  <img src="assets/landing/images/event-01.jpg" alt="">
+                  <img src="assets/landing/images/jadwal-01.jpg" alt="">
                 </div>
               </div>
               <div class="col-lg-9">
@@ -509,7 +457,7 @@
             <div class="row">
               <div class="col-lg-3">
                 <div class="image">
-                  <img src="assets/landing/images/event-02.jpg" alt="">
+                  <img src="assets/landing/images/jadwal-02.jpg" alt="">
                 </div>
               </div>
               <div class="col-lg-9">
@@ -541,7 +489,7 @@
             <div class="row">
               <div class="col-lg-3">
                 <div class="image">
-                  <img src="assets/landing/images/event-03.jpg" alt="">
+                  <img src="assets/landing/images/jadwal-03.jpg" alt="">
                 </div>
               </div>
               <div class="col-lg-9">
@@ -552,7 +500,7 @@
                   </li>
                   <li>
                     <span>Kegiatan:</span>
-                    <h6>Tutup</h6>
+                    <h6>Tidak Beroperasi</h6>
                   </li>
                 </ul>
 
