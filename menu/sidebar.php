@@ -50,7 +50,6 @@
                         </p>
                     </a>
                 </li>
-
                 <li class="nav-item">
                     <!-- Validasi IF Untuk Menu Profile jika url profile.php nav-link active jika tidak non aktif -->
                     <?php
@@ -68,11 +67,13 @@
                     </a>
                 </li>
 
+                <li class="nav-header">Menu Utama</li>
+
                 <li class="nav-item">
                     <a href="#" class="nav-link">
-                        <i class="nav-icon fas fa-tachometer-alt"></i>
+                        <i class="nav-icon fas fa-table"></i>
                         <p>
-                            Table Data
+                            Master Data Medis
                             <i class="right fas fa-angle-left"></i>
                         </p>
                     </a>
@@ -95,18 +96,6 @@
                                 <p>Table Periksa</p>
                             </a>
                         </li>
-                    </ul>
-                </li>
-
-                <li class="nav-item">
-                    <a href="#" class="nav-link">
-                        <i class="nav-icon fas fa-tachometer-alt"></i>
-                        <p>
-                            Table Data Tambahan
-                            <i class="right fas fa-angle-left"></i>
-                        </p>
-                    </a>
-                    <ul class="nav nav-treeview">
                         <li class="nav-item">
                             <a href="kelurahan/index.php" class="nav-link">
                                 <i class="far fa-circle nav-icon"></i>
@@ -123,8 +112,26 @@
                 </li>
 
                 <li class="nav-item">
+                    <a href="#" class="nav-link">
+                        <i class="nav-icon fas fa-table"></i>
+                        <p>
+                            Data Pengguna
+                            <i class="right fas fa-angle-left"></i>
+                        </p>
+                    </a>
+                    <ul class="nav nav-treeview">
+                        <li class="nav-item">
+                            <a href="kelurahan/index.php" class="nav-link">
+                                <i class="far fa-circle nav-icon"></i>
+                                <p>Table Users</p>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="nav-header">Menu Tambahan</li>
+                <li class="nav-item">
                     <a href="https://www.linkedin.com/in/eko-haryono-290/" class="nav-link" target="_blank">
-                        <i class="nav-icon fas fa-user-alt"></i>
+                        <i class="nav-icon fab fa-linkedin"></i>
                         <p>
                             Profile Linkedin
                         </p>
@@ -133,9 +140,20 @@
 
                 <li class="nav-item">
                     <a href="https://github.com/ekomh170" class="nav-link" target="_blank">
-                        <i class="nav-icon fa fa-user-alt"></i>
+                        <i class="nav-icon fab fa-github"></i>
                         <p>
                             Profile Github
+                        </p>
+                    </a>
+                </li>
+
+                <li class="nav-header">Keluar Dari Akses Administrator</li>
+
+                <li class="nav-item">
+                    <a href="../config/logout.php" class="nav-link" target="_blank">
+                        <i class="nav-icon fas  fa-sign-out-alt"></i>
+                        <p>
+                            Log-Out 
                         </p>
                     </a>
                 </li>
