@@ -14,7 +14,7 @@
                 <img src="../dist/img/profile/profile.png" class="img-circle elevation-2" alt="User Image">
             </div>
             <div class="info">
-                <a href="profile.php" class="d-block">Eko Muchamad Haryono</a>
+                <a href="#" class="d-block">Eko Muchamad Haryono</a>
             </div>
         </div>
 
