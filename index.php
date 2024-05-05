@@ -65,19 +65,19 @@ $unit_kerja = $dbh->query("SELECT COUNT(*) AS total FROM unit_kerja")->fetchColu
           <nav class="main-nav">
             <!-- ***** Logo Start ***** -->
             <a href="index.php" class="logo">
-              <h1>Puskesmasku</h1>
+              <h1>Puskesmas</h1>
             </a>
             <!-- ***** Logo End ***** -->
 
             <!-- ***** Menu Start ***** -->
             <ul class="nav">
-              <li class="scroll-to-section"><a href="#top" class="active">Halaman Utama</a></li>
+              <li class="scroll-to-section"><a href="#top" class="active">Hal. Utama</a></li>
               <li class="scroll-to-section"><a href="#services">Layanan</a></li>
               <li class="scroll-to-section"><a href="#about">Tentang</a></li>
               <li class="scroll-to-section"><a href="#courses">Kegiatan</a></li>
               <li class="scroll-to-section"><a href="#team">Dokter</a></li>
               <li class="scroll-to-section"><a href="#events">Jadwal</a></li>
-              <li class="scroll-to-section"><a href="auth/index.php">Nakes Login!</a></li>
+              <li class="scroll-to-section"><a href="auth/index.php" style="border-radius: 5px; border: 2px solid white; cursor: pointer; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);">Login!</a></li>
             </ul>
             <a class='menu-trigger'>
               <span>Menu</span>
@@ -252,8 +252,8 @@ $unit_kerja = $dbh->query("SELECT COUNT(*) AS total FROM unit_kerja")->fetchColu
       <div class="row">
         <div class="col-lg-12 text-center">
           <div class="section-heading">
-            <h6>Kegiatan Kami</h6>
-            <h2>Kegiatan Kami</h2>
+            <h6>Kegiatan</h6>
+            <h2>Kegiatan Puskesmas</h2>
           </div>
         </div>
       </div>
@@ -275,66 +275,66 @@ $unit_kerja = $dbh->query("SELECT COUNT(*) AS total FROM unit_kerja")->fetchColu
         <div class="col-lg-4 col-md-6 align-self-center mb-30 event_outer col-md-6 design">
           <div class="events_item">
             <div class="thumb">
-              <a href="#"><img src="assets/landing/images/course-01.jpg" alt=""></a>
+              <a href="#"><img src="assets/landing/images/kegiatan-01.jpg" alt="" width="300px" height="270px"></a>
             </div>
             <div class="down-content">
-              <span class="author">Stella Blair</span>
-              <h4>Learn Web Design</h4>
+              <span class="author">Pinterest</span>
+              <h4>Contoh Halaman Depan Puskesmas</h4>
             </div>
           </div>
         </div>
         <div class="col-lg-4 col-md-6 align-self-center mb-30 event_outer col-md-6  development">
           <div class="events_item">
             <div class="thumb">
-              <a href="#"><img src="assets/landing/images/course-02.jpg" alt=""></a>
+              <a href="#"><img src="assets/landing/images/kegiatan-02.jpg" alt="" width="300px" height="300px"></a>
             </div>
             <div class="down-content">
-              <span class="author">Cindy Walker</span>
-              <h4>Web Development Tips</h4>
+              <span class="author">Pinterest</span>
+              <h4>Contoh Desain Puskesmas</h4>
             </div>
           </div>
         </div>
         <div class="col-lg-4 col-md-6 align-self-center mb-30 event_outer col-md-6 design wordpress">
           <div class="events_item">
             <div class="thumb">
-              <a href="#"><img src="assets/landing/images/course-03.jpg" alt=""></a>
+              <a href="#"><img src="assets/landing/images/kegiatan-03.jpg" alt="" width="300px" height="270px"></a>
             </div>
             <div class="down-content">
-              <span class="author">David Hutson</span>
-              <h4>Latest Web Trends</h4>
+              <span class="author">Pinterest</span>
+              <h4>Contoh Desain Ruang Tunggu Puskesmas</h4>
             </div>
           </div>
         </div>
         <div class="col-lg-4 col-md-6 align-self-center mb-30 event_outer col-md-6 development">
           <div class="events_item">
             <div class="thumb">
-              <a href="#"><img src="assets/landing/images/course-04.jpg" alt=""></a>
+              <a href="#"><img src="assets/landing/images/kegiatan-04.jpg" alt="" width="300px" height="300px"></a>
             </div>
             <div class="down-content">
-              <span class="author">Stella Blair</span>
-              <h4>Online Learning Steps</h4>
+              <span class="author">Pinterest</span>
+              <h4>Ruang Tunggu Puskesmas</h4>
             </div>
           </div>
         </div>
         <div class="col-lg-4 col-md-6 align-self-center mb-30 event_outer col-md-6 wordpress development">
           <div class="events_item">
             <div class="thumb">
-              <a href="#"><img src="assets/landing/images/course-05.jpg" alt=""></a>
+              <a href="#"><img src="assets/landing/images/kegiatan-05.jpg" alt="" width="300px" height="300px"></a>
             </div>
             <div class="down-content">
-              <span class="author">Sophia Rose</span>
-              <h4>Be a WordPress Master</h4>
+              <span class="author">Pinterest</span>
+              <h4>Gambar Depan Puskesmas</h4>
             </div>
           </div>
         </div>
         <div class="col-lg-4 col-md-6 align-self-center mb-30 event_outer col-md-6 wordpress design">
           <div class="events_item">
             <div class="thumb">
-              <a href="#"><img src="assets/landing/images/course-06.jpg" alt=""></a>
+              <a href="#"><img src="assets/landing/images/kegiatan-06.jpg" alt="" width="300px" height="300px"></a>
             </div>
             <div class="down-content">
-              <span class="author">David Hutson</span>
-              <h4>Full Stack Developer</h4>
+              <span class="author">Pinterest</span>
+              <h4>NS (NurseStation) Puskesmas</h4>
             </div>
           </div>
         </div>
