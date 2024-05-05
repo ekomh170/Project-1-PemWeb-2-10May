@@ -7,7 +7,7 @@ require_once 'sidebar.php';
 <div class="content-wrapper">
     <!-- Content Header (Page header) -->
     <section class="content-header">
-    <div class="container-fluid">
+        <div class="container-fluid">
             <div class="row mb-2">
                 <div class="col-sm-6">
                     <h1>Menu Data Akun Aplikasi Puskesmas</h1>
@@ -43,8 +43,8 @@ require_once 'sidebar.php';
                                 <thead>
                                     <tr>
                                         <th>ID</th>
-                                        <th>Nama Panggilan</th>
                                         <th>Nama Lengkap</th>
+                                        <th>Nama Panggilan</th>
                                         <th>Email</th>
                                         <th>Foto</th>
                                         <th>Role</th>
@@ -65,12 +65,12 @@ require_once 'sidebar.php';
                                         echo "<td>" . $row['fullname'] . "</td>";
                                         echo "<td>" . $row['username'] . "</td>";
                                         echo "<td>" . $row['email'] . "</td>";
-                                        echo "<td>" . $row['foto'] . "</td>";
+                                        echo "<td><img src='../../assets/foto/users/" . rawurlencode($row['foto']) . "' width='100' height='100' style='image-rendering: pixelated;'/></td>";
                                         echo "<td>" . $row['role'] . "</td>";
                                         echo "<td>" . $row['created_at'] . "</td>";
                                         echo "<td>";
                                         echo "<a href='edit.php?id=" . $row['user_id'] . "'><button class='btn btn-warning'>Edit</button></a>";
-                                        echo "<span class='mx-1'></span>"; 
+                                        echo "<span class='mx-1'></span>";
                                         echo "<a href='delete.php?id=" . $row['user_id'] . "' onclick='return confirm(\"Yakin Hapus Data?\")'><button class='btn btn-danger'>Delete</button></a>";
                                         echo "</td>";
                                         echo "</tr>";
