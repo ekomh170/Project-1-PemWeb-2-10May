@@ -123,7 +123,7 @@ $unit_kerja = $dbh->query("SELECT COUNT(*) AS total FROM unit_kerja")->fetchColu
               <div class="header-text">
                 <span class="category">Kegiatan Kami</span>
                 <h2>Kegiatan Puskesmas</h2>
-                <p>Puskesmas memberikan pelayanan medis primer, termasuk diagnosa, pengobatan, dan imunisasi. Mereka juga memberikan konseling kesehatan dan edukasi kepada masyarakat. Kegiatan puskesmas mencakup penyuluhan tentang pola hidup sehat dan program pencegahan penyakit.s</p>
+                <p>Puskesmas memberikan pelayanan medis primer, termasuk diagnosa, pengobatan, dan imunisasi. Mereka juga memberikan konseling kesehatan dan edukasi kepada masyarakat. Kegiatan puskesmas mencakup penyuluhan tentang pola hidup sehat dan program pencegahan penyakit.</p>
                 <div class="buttons">
                   <div class="main-button">
                     <a href="#courses">Kegiatan</a>
