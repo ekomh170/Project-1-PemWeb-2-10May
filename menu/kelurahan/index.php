@@ -59,6 +59,8 @@ require_once 'sidebar.php';
                                         echo "<td>" . $row['nama'] . "</td>";
                                         echo "<td>";
                                         echo "<a href='edit.php?id=" . $row['id'] . "'><button class='btn btn-warning'>Edit</button></a>";
+                                        echo "<span class='mx-1'></span>"; 
+                                        echo "<a href='delete.php?id=" . $row['id'] . "' onclick='return confirm(\"Yakin Hapus Data?\")'><button class='btn btn-danger'>Delete</button></a>";
                                         echo "</td>";
                                         echo "</tr>";
                                         $counter++;
