@@ -9,15 +9,17 @@
 
 # Aplikasi CRUD Sederhana Puskesmas dengan PHP, MySQL, dan AdminLTE
 
-#### Landing Page
-![Landing Page - Aplikasi CRUD Sederhana Puskesmas dengan PHP, MySQL, dan AdminLTE]()
-
-#### Halaman Admin
-![Halaman Admin - Aplikasi CRUD Sederhana Puskesmas dengan PHP, MySQL, dan AdminLTE]()
-
 #### Design Database
 ![Design Database - Aplikasi CRUD Sederhana Puskesmas dengan PHP, MySQL, dan AdminLTE](assets/img/design_db/design_db_puskesmas.png)
 
+#### Landing Page
+![Landing Page - Aplikasi CRUD Sederhana Puskesmas dengan PHP, MySQL, dan AdminLTE](assets/img/readme/landing_page.png)
+
+#### Halaman Admin
+![Halaman Admin - Aplikasi CRUD Sederhana Puskesmas dengan PHP, MySQL, dan AdminLTE](assets/img/readme/halaman_administrator.png)
+
+#### Halaman Login
+![Halaman Login - Aplikasi CRUD Sederhana Puskesmas dengan PHP, MySQL, dan AdminLTE](assets/img/readme/halaman_login.png)
 
 ## Deskripsi
 
@@ -30,19 +32,22 @@ Projek ini bertujuan untuk membuat aplikasi CRUD sederhana. Aplikasi ini menggun
 
 ## Penjelasan Menu Yang Ada Di Aplikasi
 
-1. **Dashboard Informasi**:
+1. **Auth (Login) - Login Petugas Puskesmas**:
+   
+
+2. **Dashboard Informasi**:
    Untuk Menampilkan Informasi Penting Seperti Jumlah Data Pada Setiap Menu & Menampilkan Informasi Data Pemeriksaan Pasien Yang Terburu Setiap Di Input.
 
-2. **Profile Kreator**:
+3. **Profile Kreator**:
    Menu Tambahan Identitas Sang Kreator Aplikasi CRUD Sederhana Puskesmas
 
-3. **Menu Dokter**:
+4. **Menu Dokter**:
    - Buat tampilan CRUD untuk dokter yang mencakup:
      - Menampilkan daftar dokter.
      - Menambahkan data dokter baru.
      - Mengedit data dokter yang sudah ada.
      - Menghapus data dokter.
-4. **Menu Periksa**:
+5. **Menu Periksa**:
 
    - Buat tampilan CRUD untuk periksa yang mencakup:
      - Menampilkan daftar periksa.
@@ -50,14 +55,14 @@ Projek ini bertujuan untuk membuat aplikasi CRUD sederhana. Aplikasi ini menggun
      - Mengedit data periksa yang sudah ada.
      - Menghapus data periksa.
 
-5. **Menu Pasien**:
+6. **Menu Pasien**:
    - Buat tampilan CRUD untuk pasien yang mencakup:
      - Menampilkan daftar pasien.
      - Menambahkan data pasien baru.
      - Mengedit data pasien yang sudah ada.
      - Menghapus data pasien.
 
-6. **Menu Kelurahan**:
+7. **Menu Kelurahan**:
 
    - Buat tampilan CRUD untuk kelurahan yang mencakup:
      - Menampilkan daftar kelurahan.
@@ -65,7 +70,7 @@ Projek ini bertujuan untuk membuat aplikasi CRUD sederhana. Aplikasi ini menggun
      - Mengedit data kelurahan yang sudah ada.
      - Meniadakan Fitur Hapus Data, karena akan berpengaruh kepada ID yang sudah di hubungkan dengan table pasien
 
-7. **Menu Unit Kerja**:
+8. **Menu Unit Kerja**:
 
    - Buat tampilan CRUD untuk unit kerja yang mencakup:
      - Menampilkan daftar unit kerja.
@@ -75,16 +80,16 @@ Projek ini bertujuan untuk membuat aplikasi CRUD sederhana. Aplikasi ini menggun
 
 ##### Fitur Tambahan Di Luar Permintaan :
 
-7. **Menu Users**:
+9. **Menu Users**:
 
-9. **Edit Profile**:
+10. **Edit Profile**:
 
 
-8. **Profile Linkedin**:
+11. **Profile Linkedin**:
    Untuk Menampilkan Tautan Linkedin Sang Pembuat : [Eko Muchamad Haryono Linkedin
    ](https://www.linkedin.com/in/eko-haryono-290)
 
-9. **Profile Github**:
+12. **Profile Github**:
    Untuk Menampilkan Tautan Github Sang Pembuat : [Eko Muchamad Haryono Github
    ](https://github.com/ekomh170)
 
@@ -94,6 +99,8 @@ Projek ini bertujuan untuk membuat aplikasi CRUD sederhana. Aplikasi ini menggun
 - MySQL
 - AdminLTE
 - Bootstrap
+- JS
+- Design Database (phpmyadmin)
 
 ## Informasi Tambahan Project 01
 

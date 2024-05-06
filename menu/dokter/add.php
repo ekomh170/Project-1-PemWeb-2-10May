@@ -69,7 +69,7 @@ if (isset($_POST['submit'])) {
                                 <div class="form-group row">
                                     <label for="nama" class="col-4 col-form-label">Nama</label>
                                     <div class="col-8">
-                                        <input id="nama" name="nama" type="text" class="form-control">
+                                        <input id="nama" name="nama" type="text" class="form-control" required>
                                     </div>
                                 </div>
                                 <div class="form-group row">
@@ -84,13 +84,13 @@ if (isset($_POST['submit'])) {
                                 <div class="form-group row">
                                     <label for="tmp_lahir" class="col-4 col-form-label">Tempat Lahir</label>
                                     <div class="col-8">
-                                        <input id="tmp_lahir" name="tmp_lahir" type="text" class="form-control">
+                                        <input id="tmp_lahir" name="tmp_lahir" type="text" class="form-control" required>
                                     </div>
                                 </div>
                                 <div class="form-group row">
                                     <label for="tgl_lahir" class="col-4 col-form-label">Tanggal Lahir</label>
                                     <div class="col-8">
-                                        <input id="tgl_lahir" name="tgl_lahir" type="date" class="form-control">
+                                        <input id="tgl_lahir" name="tgl_lahir" type="date" class="form-control" required>
                                     </div>
                                 </div>
 
@@ -115,13 +115,13 @@ if (isset($_POST['submit'])) {
                                 <div class="form-group row">
                                     <label for="telpon" class="col-4 col-form-label">Telpon</label>
                                     <div class="col-8">
-                                        <input id="telpon" name="telpon" type="telpon" class="form-control">
+                                        <input id="telpon" name="telpon" type="telpon" class="form-control" required>
                                     </div>
                                 </div>
                                 <div class="form-group row">
                                     <label for="alamat" class="col-4 col-form-label">Alamat</label>
                                     <div class="col-8">
-                                        <input id="alamat" name="alamat" type="text" class="form-control">
+                                        <input id="alamat" name="alamat" type="text" class="form-control" required>
                                     </div>
                                 </div>
                                 <div class="form-group row">
