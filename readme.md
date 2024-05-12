@@ -8,6 +8,7 @@
 - **Nama Dosen**: Dr. Sirojul Munir, S.Si., M.Kom
 - **Tujuan Tugas**: Sebagai Tugas Project 01 Atau Pertama Saat Semester 2, Mata Kuliah Pemrograman Web 2 Sebagai Penilaian UTS
 - **Hosting Kampus**: https://kreasi.nurulfikri.ac.id/ekom23079ti/puskesmas-personal-project-01-pemweb-2-10may/
+- **Post Linkedin**: [Link Post](https://www.linkedin.com/posts/eko-haryono-290_presentasi-puskesmas-berbasis-web-project-activity-7193501122496520193-_P0u?utm_source=share&utm_medium=member_desktop)
 
 # Aplikasi Puskesmas Sederhana Berbasis Web dengan Teknologi Utama PHP, MySQL, dan AdminLTE
 
@@ -32,7 +33,7 @@ Project ini bertujuan untuk membuat aplikasi CRUD sederhana. Aplikasi ini menggu
 1. [Project 01 - 10 Mei - Aplikasi CRUD Sederhana Puskesmas
    ](https://github.com/ekomh170/Project-1-PemWeb-2-10May.git)
 
-## Penjelasan Menu Yang Ada Di Aplikasi
+## Penjelasan Fitur Yang Ada Di Aplikasi Puskesmas
 
 1. **Landing Page - Puskesmas**
    Untuk Menampilkan Informasi Layanan, Tentang, Kegiatan, Dokter, Jadwal Yang Bersifat Seharusnya Dapat Dilihat Oleh Masyarakat Umum
